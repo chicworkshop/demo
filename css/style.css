@@ -1,0 +1,169 @@
+@font-face {
+	font-family: 'Grota Sans Rd Semi';
+	src: url('https://cdn.shopify.com/s/files/1/0252/6029/4226/files/GrotaSansRd-SemiBold.eot?v=1625033209');
+	src: url('https://cdn.shopify.com/s/files/1/0252/6029/4226/files/GrotaSansRd-SemiBold.eot?v=1625033209#iefix') format('embedded-opentype'), url('https://cdn.shopify.com/s/files/1/0252/6029/4226/files/GrotaSansRd-SemiBold.woff2?v=1625033209') format('woff2'), url('https://cdn.shopify.com/s/files/1/0252/6029/4226/files/GrotaSansRd-SemiBold.woff?v=1625033209') format('woff'), url('https://cdn.shopify.com/s/files/1/0252/6029/4226/files/GrotaSansRd-SemiBold.ttf?v=1625033209') format('truetype'), url('https://cdn.shopify.com/s/files/1/0252/6029/4226/files/GrotaSansRd-SemiBold.svg?v=1625033209#GrotaSansRd-SemiBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Grota Sans Rd';
+	src: url('https://cdn.shopify.com/s/files/1/0252/6029/4226/files/GrotaSansRd.eot?v=1625033209');
+	src: url('https://cdn.shopify.com/s/files/1/0252/6029/4226/files/GrotaSansRd.eot?#iefix?v=1625033209') format('embedded-opentype'), url('https://cdn.shopify.com/s/files/1/0252/6029/4226/files/GrotaSansRd.woff2?v=1625033209') format('woff2'), url('https://cdn.shopify.com/s/files/1/0252/6029/4226/files/GrotaSansRd.woff?v=1625033209') format('woff'), url('https://cdn.shopify.com/s/files/1/0252/6029/4226/files/GrotaSansRd.ttf?v=1625033209') format('truetype'), url('https://cdn.shopify.com/s/files/1/0252/6029/4226/files/GrotaSansRd.svg#GrotaSansRd?v=1625033209') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: 'Grota Sans Rd', Arial, sans-serif;
+}
+
+h1, h2 {
+	font-family: 'Grota Sans Rd';
+	font-weight: normal;
+}
+
+h3, h4, h5, h6 {
+	font-family: 'Grota Sans Rd Semi';
+	font-weight: normal;
+}
+
+body {
+	font-size: 14px;
+	font-family: 'Grota Sans Rd';
+	color: #312d2c;
+}
+
+header {
+	border-top: 36px solid #FFDB83;
+	text-align: center;
+	padding: 2em;
+}
+
+.logo img {
+	max-width: 110px;
+}
+
+.page-container {
+	margin: 2em auto;
+	max-width: 1400px;
+}
+
+.page-container-inner {
+	background: #F7F3EC;
+	border-radius: 20px;
+	padding: 2em;
+	margin: 2em;
+}
+
+.page-container .title {
+	text-align: center;
+	font-family: 'Grota Sans Rd Semi';
+}
+
+.page-container .title h2 {
+	font-size: 36px;
+}
+
+.page-container hr {
+	border-top: 2px solid #ff6118;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.country-list {
+
+}
+
+.country-list .country {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.country-list .country:last-child {
+	border-right: none;
+}
+
+.country-list .country h3 {
+	font-size: 30px;
+  text-align: center;
+}
+
+.list {
+  max-width: 160px;
+  margin: 0 auto;
+}
+
+.list .item {
+	display: flex;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.list .item img {
+	width: 20px;
+	margin-right: .4em;
+}
+
+.list .item a {
+	display: flex;
+	color: #312d2c;
+	text-decoration: none;
+	font-family: 'Grota Sans Rd Semi';
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+}
+
+.list .item .lang-sub {
+	font-family: 'Grota Sans Rd';
+	font-size: 14px;
+}
+
+
+
+.country.Europe .list .item {
+	flex: 1;
+}
+
+footer {
+	background: #312D2C;
+	color: #fff;
+	padding: 1em 2em;
+}
+
+@media only screen and (min-width: 801px) {
+	.page-container-inner {
+		padding: 4em 8em;
+	}
+  .country-list {
+  	display: flex;
+  	margin-top: 1em;
+  	margin-bottom: 1em;
+  	flex-wrap: wrap;
+  	gap: 2em;
+  }
+  .country-list .country {
+  	border-right: 1px solid #ff6118;
+  	flex: 1 1 0;
+  	padding-right: 2em;
+  }
+  .country-list .country h3 {
+    text-align: left;
+  }
+  .list {
+    max-width: none;
+    margin: 0 ;
+  }
+  .country-list .country.Europe {
+  	flex: 2;
+  }
+  .country.Europe .list {
+  	column-count: 2;
+  	flex: 1;
+  }
+
+}
