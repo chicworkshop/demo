@@ -99,8 +99,9 @@ header {
 
 .list .item {
 	display: flex;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	height: 36px;
 }
 
 .list .item img {
