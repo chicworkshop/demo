@@ -159,10 +159,10 @@ footer {
     max-width: none;
     margin: 0 ;
   }
-  .country-list .country.Europe {
+.country-list .country.Asia {
   	flex: 2;
   }
-  .country.Europe .list {
+  .country.Asia .list {
   	column-count: 2;
   	flex: 1;
   }
