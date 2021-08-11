@@ -160,10 +160,10 @@ footer {
     max-width: none;
     margin: 0 ;
   }
-.country-list .country.Asia {
+.country-list .country.Asiax {
   	flex: 2;
   }
-  .country.Asia .list {
+  .country.Asiax .list {
   	column-count: 2;
   	flex: 1;
   }
